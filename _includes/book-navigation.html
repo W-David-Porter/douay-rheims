@@ -1,0 +1,11 @@
+<ul class="item-list collapsable-menu collapsed">
+{% if page.testament == "NT" %}  
+    {% for item in site.data.nt-navigation %}
+        <li class="book-item {% if page.book == item.name %}active{% endif %}"><a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+{%else %}
+    {% for item in site.data.ot-navigation %}
+        <li class="book-item {% if page.book == item.name %}active{% endif %}"><a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+{% endif %}
+</ul>

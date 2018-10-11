@@ -1,0 +1,449 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* --- common --- */
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.span_1_2 {
+    width: 48.5%;
+}
+
+.success {
+    color: green;
+}
+
+.danger {
+    color: red;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ---- header ---- */
+
+.main-header {
+    border: none;
+    margin: 0;
+    background: rgb(143, 116, 86);
+    width: 100%;
+    padding: 0 13px;
+    box-sizing: border-box;
+    @media screen and (max-width: 1000px) and (min-width: 800px) {
+        padding: 0 2px;
+    }    
+    @media screen and (max-width: 799px) {
+        padding: 0 2px;        
+    }
+    .header-login {
+        height: 46px;
+    }
+    .header-right {
+        float: right;
+        max-width: 680px;
+        text-align: center;
+        margin-right: 50px;
+        @media screen and (max-width: 1000px) and (min-width: 800px) {
+                margin-right: 20px;
+        }
+        @media screen and (max-width: 799px) {
+            margin-right: 20px;
+        }
+        div {
+            width: 100%;
+        }
+        .main-caption {
+            @media screen and (max-width: 1000px) and (min-width: 800px) {
+                font-size: 28px;   
+            }            
+            @media screen and (max-width: 799px) {
+                font-size: 18px;
+            }
+        }
+        .second-caption {
+            @media screen and (max-width: 1000px) and (min-width: 800px) {
+                font-size: 14px;
+            }            
+            @media screen and (max-width: 799px) {
+                font-size: 12px;
+            }   
+        }
+    }
+    .main-caption{
+        font-size: 32px;
+        font-weight: bold;
+        color: #FFC;
+        padding: 5px 0 5px 0;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-variant: small-caps;
+        @media screen and (max-width: 799px) {
+            font-size: 20px;
+        }
+    }
+    .second-caption {
+        font-size: 18px;
+        font-weight: bold;
+        color: #FFF;
+    }
+    .header-login{
+        color: #F1EFE7;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+}
+
+
+/*--- main --- */
+.page-content{
+    margin: 0;
+    width: 100%;
+    padding: 22px 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    @media screen and (max-width: 1000px) {
+        padding: 0;
+    }
+}
+
+/*--- left menu --- */
+.side-menu {
+    @media screen and (min-width: 1001px) {
+        background: rgb(241, 239, 231);
+        width: 190px;
+        float: left;
+    }
+    @media screen and (max-width: 1000px) {
+        background: rgb(241, 239, 231);
+    }
+    ul {
+        list-style: none;
+        margin: 2px;
+        padding: 0;
+        @media screen and (max-width: 1000px) {
+            border-top: 2px solid rgb(255, 255, 255);
+        }
+    }
+    li a {
+        @media screen and (max-width: 1000px) {
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            line-height: 35px;
+            vertical-align: middle;
+        }
+    }
+    
+    .sheet-list {
+        li{
+            display: inline-block;
+            padding: 4px 2px;
+            box-sizing: border-box;
+        }
+        a {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            color: #8F7456;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: underline;
+            padding: 5px 10px;
+            background-color:  #FFFFFF;
+            box-sizing: border-box;
+            &:hover {
+                color: rgb(204, 0, 0);
+            }
+        }
+        .active a{
+            text-decoration: none;
+            background-color: inherit;
+        }
+    }
+    .item-list{
+        margin: 5px;
+        .book-item {
+            a {
+                font-size: 16px;
+                color: #8F7456;
+                margin-left: 4px;
+                text-decoration: none;
+                &:hover {
+                    color: rgb(204, 0, 0);
+                }
+            }
+            &.active a{
+                color: rgb(204, 0, 0);
+            }            
+        }
+    }
+}
+
+.dropdown-menu {
+    @media screen and (min-width: 1001px) {
+        display: none;
+    }
+    @media screen and (max-width: 1000px) {
+        display: block;
+        padding: 10px;
+    }
+    a {
+        @media screen and (max-width: 1000px) {
+            display: inline-block;
+            line-height: 40px;
+            border: 1px solid #CAD0DB;
+            border-bottom: 0;
+            color: #F1EFE7;
+            vertical-align: top;
+            text-decoration: none;
+            background-color: #8F7456;
+            font-family: Arial,serif;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0 25px;
+        }        
+    }
+}
+
+.collapsed {
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+/* ---- main-content ---- */
+
+.main {
+    width: 65%;
+    margin: 0 0 0 20px;
+    display: inline-block;
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        margin: auto;
+    }
+    @media screen and (max-width: 1250px) and (min-width: 1000px) {
+        width: 60%;
+        margin-left: 10px;
+    }
+}
+
+.main-content {
+    border: 2px solid rgb(241, 239, 231);
+    width: 100%;
+    a { 
+        color: #8F7456;
+        text-decoration: none;
+    }
+    .prev-chapter, .next-chapter {
+         a {
+            @media screen and (max-width: 1000px) {
+                width: 150px;
+            }   
+        }
+    }
+}
+
+%book-ends {
+    text-align: center;
+    color: #8F7456;
+    padding: 8px;
+}
+
+.book-header { 
+    @extend %book-ends;
+    border-bottom: 2px solid rgb(241, 239, 231);
+    .vers-view-type {
+        position: absolute;
+        @media screen and (max-width: 600px) {
+            position: static;
+            display: block;
+        }
+    }
+    .bible-name {
+        font-size: large;
+        font-weight: bold;
+        padding: 4px;
+    }
+    .book-name {
+        padding: 5px 0;
+        font-weight: bold;
+        font-size: large;
+        color: #CC0000;
+    }
+}
+
+.book-footer {
+    @extend %book-ends;
+    border-top: 2px solid rgb(241, 239, 231);
+}
+
+.act-chapter {
+    padding: 4px;
+    font-weight: bold;
+    .chapter {
+        display: inline-block;
+        color: #CC0000;
+        font-size: large;
+        width: 130px;
+    }
+}
+
+.prev-chapter, .next-chapter {
+    display: inline-block;
+    font-size: medium;
+    width: 80px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.chapters {
+    padding: 4px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: small;
+    a {
+        &.active {
+            color: #CC0000;
+        }
+        &:hover {
+            color: #CC0000;
+        }
+    }
+}
+
+.verses {
+    padding: 8px;
+    text-align: justify;
+}
+
+.vers {
+    line-height: 125%;
+    text-align: justify;
+    .vers-no {
+        display: inline;
+        color: #CC0000;
+        font-weight: bold;
+        font-family: Geneva, Arial, Helvetica, sans-serif;
+        font-size: small;
+    }
+    .vers-content{
+        display: inline;
+    }
+    .content-paragraph{
+        display: none;
+    }
+    a {
+        text-decoration: underline;
+    }
+    .speaker{
+        font-size: 0.7em;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-right: 5px;
+    }
+}
+
+.vers-inline {
+    display: inline;
+    .content-paragraph {
+        display: inline;
+    }
+    
+}
+
+.vers-searched {
+    background-color: #FFFFCC;
+}
+
+
+/* --- cutom colors --- */
+.firstverse {
+    color: #8F7456;
+}
+
+.number {
+    display: inline;
+    color: #CC0000;
+    font-weight: bold;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+/* --- adv --- */
+.advert {
+    width: 180px;
+    border: 2px solid rgb(241, 239, 231);
+    text-align: center;
+    display: inline-block;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 16px;
+    vertical-align: top;
+    margin-left: 15px;
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        margin-left: 0;
+    }
+    @media screen and (max-width: 1250px) and (min-width: 1000px) {
+        margin-left: 0;
+        float: right;
+    }
+}
+
+.advert-text {
+    font-family: Merriweather;
+    color: #8F7456;
+}
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #C2AF9A;
+    font-weight: normal;
+    padding: 25px 0;
+}
+
+/* --- report-problem --- */
+.report-problem {
+    width: 100%;
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #C2AF9A;
+    font-weight: normal;
+    margin-top: -15px;
+    padding-bottom: 25px;
+    a {
+        color: #8F7456;
+    }
+}
+
+
+.center{
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    @media screen and (max-width: 1000px) {
+        text-align: center;
+        width: 100%;
+        max-width: none;
+    
+    }
+}
+

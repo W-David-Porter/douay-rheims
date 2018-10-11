@@ -2,80 +2,43 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<title>Douay Rheims 1633 :: {{ page.title }}</title>
+	<title>Original Douay Rheims {{ page.book }} {{ page.chapter }}</title>
 	<meta name=description content="Douay Rheims original true version">
-	<meta name=keywords content="catholic, douay, rheims, original, true, bible, scriptures, old testament, new testament">
+	<meta name=keywords content="catholic, bible, douay, rheims, original, true, scriptures, old testament, new testament, vulgate">
 	<meta name=author content="God the Holy Spirit">
 	<meta name=copyright content="2018 David Porter">
 	<meta name=robots content="index, follow">
 	<meta name=revisit-after content="1 week">
 
-    <link href=http://catholicbible.online/assets/libs/font-awesome-4.4.0/css/font-awesome.min.css rel=stylesheet type=text/css>
-	<link href=/assets/css/site.css rel=stylesheet type=text/css>
+	<link href=/assets/css/styles.css rel=stylesheet type=text/css>
 	<link href=https://douayrheims.neocities.org/photo.css rel=stylesheet type=text/css>
     <script src=/assets/js/site.js></script>
 </head>
 <body>
 <header class="main-header">
 	<div class="header-left">
-		<div class="main-caption">
-			<span class="main-caption-bigger">D</span>OUAY<span class="main-caption-bigger">R</span>HEIMS <span class="main-caption-bigger">B</span>IBLE
-		</div>
-		<div class="clearfix"> </div>
-		</div>
+		<div class="main-caption">Douay Rheims Bible</div>
 		<div class="clearfix"> </div>
 	</div>
-
 	<div class="clearfix"> </div>
 </header>
 <div class="page-content">
 	<div class="side-menu">
 	<div class="dropdown-menu">
-		<a href="#" class="selected-sheet-caption dropdown" data-target="sheet-list">NT</a>
-		<a href="#" class="selected-book dropdown" data-target="item-list">Matthew</a>
+		<a href="#" class="selected-sheet-caption dropdown" data-target="sheet-list">{{ page.testament }}</a>
+		<a href="#" class="selected-book dropdown" data-target="item-list">{{ page.book }}</a>
 	</div>
-	<ul class="sheet-list collapsable-menu collapsed">
-					<li class="sheet-caption span_1_2"><a href="http://catholicbible.online/knox/OT">OT</a></li>
-					<li class="sheet-caption active span_1_2"><a href="http://catholicbible.online/knox/NT">NT</a></li>
-			</ul>
-	<ul class="item-list collapsable-menu collapsed">
-					<li class="book-item active"><a href="http://catholicbible.online/knox/NT/Mat">Matthew</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Mk">Mark</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Lk">Luke</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Jn">John</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Act">Acts of Apostles</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Rom">Romans</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/1_Cor">1 Corinthians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/2_Cor">2 Corinthians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Gal">Galatians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Eph">Ephesians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Phl">Philippians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Col">Colossians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/1_Th">1 Thessalonians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/2_Th">2 Thessalonians</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/1_Tim">1 Timothy</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/2_Tim">2 Timothy</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Tit">Titus</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Phm">Philemon</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Heb">Hebrews</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Jas">James</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/1_Pet">1 Peter</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/2_Pet">2 Peter</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/1_Jn">1 John</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/2_Jn">2 John</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/3_Jn">3 John</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Jud">Jude</a></li>
-					<li class="book-item"><a href="http://catholicbible.online/knox/NT/Apoc">Apocalypse</a></li>
-			</ul>
+	{% include sheet-list.html %}
+	{% include book-navigation.html %}
 </div>
 	<div class="main">
 		<div class="main-content">
 			<div class="book-header">
-				<div class="bible-name">The Holy Bible – Knox Translation</div>
-				<div class="book-name">The Holy Gospel of Jesus Christ According to Matthew </div>
+				<div class="bible-name">The Holy Bible — Original Douay Rheims Translation</div>
+				<div class="book-name">{{ page.fullbookname }}</div>
 				<div class="act-chapter">
 					<div class="prev-chapter"><a href="http://catholicbible.online/knox/NT/Mat/7913">&lt; prev</a></div>|
-					<div class="chapter">Chapter 2</div>
+					<div class="chapter">Chapter {{ page.chapter }}</div>
 					|<div class="next-chapter"><a href="http://catholicbible.online/knox/NT/Mat/7915">next &gt;</a></div>
 				</div>
 				<div class="chapters">
@@ -88,7 +51,7 @@
 			<div class="book-footer">
 				<div class="act-chapter">
 					<div class="prev-chapter"><a href="http://catholicbible.online/knox/NT/Mat/ch_1">&lt; prev</a></div>|
-					<div class="chapter">Chapter 2</div>
+					<div class="chapter">Chapter {{ page.chapter }}</div>
 					|<div class="next-chapter"><a href="http://catholicbible.online/knox/NT/Mat/ch_3">next &gt;</a></div>
 				</div>
 				<div class="chapters">

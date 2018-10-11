@@ -1,0 +1,54 @@
+- name: Matthew
+  link: /new-testament/matthew
+- name: Mark
+  link: /new-testament/mark
+- name: Luke
+  link: /new-testament/luke
+- name: John
+  link: /new-testament/john
+#- name: Acts of Apostles
+#  link: /new-testament/acts
+#- name: Romans
+#  link: /new-testament/romans
+#- name: 1 Corinthians
+#  link: /new-testament/1-corinthians
+#- name: 2 Corinthians
+#  link: /new-testament/2-corinthians
+#- name: Galatians
+#  link: /new-testament/galatians
+#- name: Ephesians
+#  link: /new-testament/ephesians
+#- name: Philippians
+#  link: /new-testament/philippians
+#- name: Colossians
+#  link: /new-testament/colossians
+#- name: 1 Thessalonians
+#  link: /new-testament/1-thessalonians
+#- name: 2 Thessalonians
+#  link: /new-testament/2-thessalonians 
+#- name: 1 Timothy
+#  link: /new-testament/1-timothy 
+#- name: 2 Timothy
+#  link: /new-testament/2-timothy
+#- name: Titus 
+#  link: /new-testament/titus 
+#- name: Philemon
+#  link: /new-testament/philemon
+#- name: Hebrews 
+#  link: /new-testament/hebrews
+#- name: James 
+#  link: /new-testament/james 
+#- name: 1 Peter
+#  link: /new-testament/1-peter 
+#- name: 2 Peter
+#  link: /new-testament/2-peter
+#- name: 1 John 
+#  link: /new-testament/1-john 
+#- name: 2 John
+#  link: /new-testament/2-john 
+#- name: 3 John
+#  link: /new-testament/3-john
+#- name: Jude 
+#  link: /new-testament/jude 
+#- name: Apocalypse
+#  link: /new-testament/apocalypse 
