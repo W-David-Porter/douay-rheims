@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, sans-serif;
 }
 
 
@@ -90,7 +90,7 @@ body {
         font-weight: bold;
         color: #FFC;
         padding: 5px 0 5px 0;
-        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-family: Georgia, serif;
         font-variant: small-caps;
         @media screen and (max-width: 799px) {
             font-size: 20px;
@@ -325,27 +325,9 @@ body {
     }
 }
 
-.verses {
+.verse {
     padding: 8px;
-    text-align: justify;
-}
-
-.vers {
-    line-height: 125%;
-    text-align: justify;
-    .vers-no {
-        display: inline;
-        color: #CC0000;
-        font-weight: bold;
-        font-family: Geneva, Arial, Helvetica, sans-serif;
-        font-size: small;
-    }
-    .vers-content{
-        display: inline;
-    }
-    .content-paragraph{
-        display: none;
-    }
+    line-height: 150%;
     a {
         text-decoration: underline;
     }
@@ -447,3 +429,28 @@ body {
     }
 }
 
+// these are the styles added by me for content
+.verse > p:first-child:first-letter { 
+    float: left; 
+    color: #903; 
+    font-size: 50pt; 
+    line-height: 40px; 
+    padding-top: 4px; 
+    padding-right: 8px; 
+    padding-left: 3px;
+  }
+  
+  sup {
+    line-height: 0;
+  }
+  
+  .chapter-intro p {
+    padding-left: 4ch;
+    text-indent: -4ch;
+  }
+  
+  
+  .main {
+    line-height: 150%;
+    /*font-size: 14pt; */
+  }

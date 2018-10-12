@@ -11,7 +11,6 @@
 	<meta name=revisit-after content="1 week">
 
 	<link href=/assets/css/styles.css rel=stylesheet type=text/css>
-	<link href=https://douayrheims.neocities.org/photo.css rel=stylesheet type=text/css>
     <script src=/assets/js/site.js></script>
 </head>
 <body>
@@ -36,47 +35,18 @@
 			<div class="book-header">
 				<div class="bible-name">The Holy Bible — Original Douay Rheims Translation</div>
 				<div class="book-name">{{ page.fullbookname }}</div>
-				<div class="act-chapter">
-					<div class="prev-chapter"><a href="http://catholicbible.online/knox/NT/Mat/7913">&lt; prev</a></div>|
-					<div class="chapter">Chapter {{ page.chapter }}</div>
-					|<div class="next-chapter"><a href="http://catholicbible.online/knox/NT/Mat/7915">next &gt;</a></div>
-				</div>
-				<div class="chapters">
-					<a href="http://catholicbible.online/knox/NT/Mat/ch_1">1</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_2" class="active">2</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_3">3</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_4">4</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_5">5</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_6">6</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_7">7</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_8">8</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_9">9</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_10">10</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_11">11</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_12">12</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_13">13</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_14">14</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_15">15</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_16">16</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_17">17</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_18">18</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_19">19</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_20">20</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_21">21</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_22">22</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_23">23</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_24">24</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_25">25</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_26">26</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_27">27</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_28">28</a> 				</div>
+				{% include act-chapter.html %}
 			</div>
 
             {{ content }}
 
-
 			<div class="book-footer">
-				<div class="act-chapter">
-					<div class="prev-chapter"><a href="http://catholicbible.online/knox/NT/Mat/ch_1">&lt; prev</a></div>|
-					<div class="chapter">Chapter {{ page.chapter }}</div>
-					|<div class="next-chapter"><a href="http://catholicbible.online/knox/NT/Mat/ch_3">next &gt;</a></div>
-				</div>
-				<div class="chapters">
-					<a href="http://catholicbible.online/knox/NT/Mat/ch_1">1</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_2" class="active">2</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_3">3</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_4">4</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_5">5</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_6">6</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_7">7</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_8">8</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_9">9</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_10">10</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_11">11</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_12">12</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_13">13</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_14">14</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_15">15</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_16">16</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_17">17</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_18">18</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_19">19</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_20">20</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_21">21</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_22">22</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_23">23</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_24">24</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_25">25</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_26">26</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_27">27</a> <a href="http://catholicbible.online/knox/NT/Mat/ch_28">28</a> 				</div>
+				{% include act-chapter.html %}
 			</div>
 		</div>
 	</div>
 	<div class="advert">
-		<div id=PhotoGallery class=photo-gallery>
-			<figure class=photo-gallery--image> 
-				<a href=https://douayrheims.neocities.org/images/new-testament/5.jpg class=photo>
-					<img src=https://douayrheims.neocities.org/images/new-testament/5-thumb.jpg alt="page 5" title="page 5">
-				</a>
-			</figure>
-			<figure class=photo-gallery--image>
-				<a href=https://douayrheims.neocities.org/images/new-testament/6.jpg class=photo>
-					<img src=https://douayrheims.neocities.org/images/new-testament/6-thumb.jpg alt="page 6" title="page 6">
-				</a>
-			</figure>
-			<figure class=photo-gallery--image>
-				<a href=https://douayrheims.neocities.org/images/new-testament/7.jpg class=photo>
-					<img src=https://douayrheims.neocities.org/images/new-testament/7-thumb.jpg alt="page 7" title="page 7">
-				</a>
-			</figure>
-		</div>		
+		{% include images.html %}
 	</div>
 </div>
 <div class=copyright>© 1633–2018</div>
@@ -86,26 +56,6 @@
 	<div class=report-problem>
 		<a href=mailto:davidporter65@outlook.com class=report-problem-action>Report a Problem</a>
 	</div>		
-	</body>
-
-
-<!-- this is support code for the photo viewer. Photo markup is in div.advert above -->
-<div id=PhotoViewer class=photo-viewer>
-	<header class=photo-viewer--title>
-		<h1 id=PhotoViewerTitle>Image Title</h1>
-		<div id=PhotoViewerClose class=photo-viewer--close><a href=#>X</a></div>
-	</header>
-	<div class=photo-viewer--container>
-		<figure class=photo-viewer--current-image id=PhotoViewerCurrentImageContainer>
-			<img id=PhotoViewerCurrentImage src="" />
-		</figure>
-	</div>
-	<div class=photo-viewer--controls>
-		<div id=PhotoViewerPreviousImage class=photo-viewer--previous-image><a href=#>&laquo; Previous</a></div>
-		<div id=PhotoViewerCount class=photo-viewer--count>1/10</div>
-		<div id=PhotoViewerNextImage class=photo-viewer--next-image><a href=#>Next &raquo;</a></div>
-	</div>
-</div>
-<script src=https://douayrheims.neocities.org/photo.js></script>
-
+	{% include photo-viewer.html %}
+</body>
 </html>            

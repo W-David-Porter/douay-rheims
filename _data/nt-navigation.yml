@@ -1,11 +1,13 @@
+- name: Front Matter
+  link: /new-testament/front-matter/title
 - name: Matthew
-  link: /new-testament/matthew
+  link: /new-testament/matthew/1
 - name: Mark
-  link: /new-testament/mark
+  link: /new-testament/mark/1
 - name: Luke
-  link: /new-testament/luke
+  link: /new-testament/luke/1
 - name: John
-  link: /new-testament/john
+  link: /new-testament/john/1
 #- name: Acts of Apostles
 #  link: /new-testament/acts
 #- name: Romans
