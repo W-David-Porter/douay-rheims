@@ -1,0 +1,25 @@
+testaments:
+  - testament: OT
+    url: /old-testament/genesis/1  
+    books:
+      - name: Genesis
+        url: /old-testament/genesis/1
+        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+      - name: Job
+        url: /old-testament/job/1
+        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+  - testament: NT
+    url: /new-testament/matthew/1
+    books:
+      - name: Front Matter
+        url: /new-testament/front-matter/title
+        chapters: [cover, title, approbation, preface, books, marks, summary]
+      - name: Matthew
+        url: /new-testament/matthew/1
+        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+      - name: Mark
+        url: /new-testament/mark/1
+        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+      - name: Luke
+        url: /new-testament/luke/1
+        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]

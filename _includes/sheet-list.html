@@ -1,4 +1,3 @@
-<ul class="sheet-list collapsable-menu collapsed">
-	<li class="sheet-caption span_1_2 {% if page.testament == 'OT' %}active{% endif %}"><a href=/old-testament/genesis/1>OT</a>
-	<li class="sheet-caption span_1_2 {% if page.testament == 'NT' %}active{% endif %}"><a href=/new-testament/matthew/1>NT</a>
+<ul class="sheet-list collapsable-menu collapsed">{% for item in site.data.navigation.testaments %}
+	<li class="sheet-caption span_1_2{% if page.sidebar == item.testament %} active{% endif %}"><a href={{item.url}}>{{ item.testament }}</a></li>{% endfor %}
 </ul>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<title>Original Douay Rheims {{ page.book }} {{ page.chapter }}</title>
+	<title>Douay Rheims {{ page.bookname }} {{ page.chapter }}</title>
 	<meta name=description content="Douay Rheims original true version">
 	<meta name=keywords content="catholic, bible, douay, rheims, original, true, scriptures, old testament, new testament, vulgate">
 	<meta name=author content="God the Holy Spirit">
@@ -24,8 +24,8 @@
 <div class="page-content">
 	<div class="side-menu">
 	<div class="dropdown-menu">
-		<a href="#" class="selected-sheet-caption dropdown" data-target="sheet-list">{{ page.testament }}</a>
-		<a href="#" class="selected-book dropdown" data-target="item-list">{{ page.book }}</a>
+		<a href="#" class="selected-sheet-caption dropdown" data-target="sheet-list">{{page.sidebar}}</a>
+		<a href="#" class="selected-book dropdown" data-target="item-list">{{page.bookname}}</a>
 	</div>
 	{% include sheet-list.html %}
 	{% include book-navigation.html %}
@@ -34,7 +34,7 @@
 		<div class="main-content">
 			<div class="book-header">
 				<div class="bible-name">The Holy Bible — Original Douay Rheims Translation</div>
-				<div class="book-name">{{ page.fullbookname }}</div>
+				<div class="book-name">{{ page.longbookname }}</div>
 				{% include act-chapter.html %}
 			</div>
 
