@@ -65,3 +65,8 @@ defaults:
     values:
       bookname: Luke
       longbookname: The Holy Ghospel of Jesus Christ According to Luke
+  - scope:
+      path: new-testament/john
+    values:
+      bookname: John
+      longbookname: The Holy Ghospel of Jesus Christ According to John

@@ -95,6 +95,12 @@ body {
         @media screen and (max-width: 799px) {
             font-size: 20px;
         }
+        a {
+            text-decoration: none;
+            &:visited, &:active {
+                color: $title-color;
+            }
+        }    
     }
     .second-caption {
         font-size: 18px;
