@@ -3,26 +3,33 @@ testaments:
     url: /old-testament/genesis/1  
     books:
       - name: Genesis
-        url: /old-testament/genesis/1
+        path: /old-testament/genesis
+        index: 1
         chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
       - name: Job
-        url: /old-testament/job/1
+        path: /old-testament/job
+        index: 1
         chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
   - testament: NT
     url: /new-testament/matthew/1
     books:
       - name: Front Matter
-        url: /new-testament/front-matter/title
+        path: /new-testament/front-matter
+        index: title
         chapters: [cover, title, approbation, preface, books, marks, summary]
       - name: Matthew
-        url: /new-testament/matthew/1
+        path: /new-testament/matthew
+        index: 1
         chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
       - name: Mark
-        url: /new-testament/mark/1
+        path: /new-testament/mark
+        index: 1
         chapters: [cover, argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
       - name: Luke
-        url: /new-testament/luke/1
+        path: /new-testament/luke
+        index: 1
         chapters: [cover, argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
       - name: John
-        url: /new-testament/john/1
+        path: /new-testament/john
+        index: 1
         chapters: [cover, argument, 1]

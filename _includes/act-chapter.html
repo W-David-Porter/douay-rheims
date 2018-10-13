@@ -9,6 +9,6 @@
     {% for chapter in book.chapters %}
         {% assign lowerchapter = page.chapter | downcase %}
         {% assign chapterasstring = chapter | append: "" %}
-        <a href=../{{ chapter }}{% if chapterasstring==lowerchapter %} class=active{% endif %}>{{ chapter }}</a>
+        <a href={{book.path}}/{{chapter}}{% if chapterasstring==lowerchapter %} class=active{% endif %}>{{ chapter }}</a>
     {% endfor %}
 </div>

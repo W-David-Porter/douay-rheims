@@ -1,8 +1,8 @@
 <div id=PhotoGallery class=photo-gallery>
     {% for imageid in page.images %} 
     <figure class=photo-gallery--image> 
-        <a href=https://douayrheims.neocities.org/images/{{page.tome}}/{{imageid}}.jpg class=photo>
-            <img src=https://douayrheims.neocities.org/images/{{page.tome}}/{{imageid}}-thumb.jpg alt="page {{imageid}}" title="page {{imageid}}">
+        <a href={{site.url}}{{site.image-path}}{{page.tome}}/{{imageid}}.jpg class=photo>
+            <img src={{site.url}}{{site.image-path}}{{page.tome}}/{{imageid}}-thumb.jpg alt="page {{imageid}}" title="page {{imageid}}">
          </a>
     </figure>
     {%endfor%}
