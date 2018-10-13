@@ -21,7 +21,7 @@ url: "http://example.com" # the base hostname & protocol for your site, e.g. htt
 
 # Build settings
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -60,3 +60,8 @@ defaults:
     values:
       bookname: Mark
       longbookname: The Holy Ghospel of Jesus Christ According to Mark
+  - scope:
+      path: new-testament/luke
+    values:
+      bookname: Luke
+      longbookname: The Holy Ghospel of Jesus Christ According to Luke
