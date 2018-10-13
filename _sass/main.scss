@@ -1,3 +1,18 @@
+/*$dark-back-color: #8F7456;
+$title-color: #FFFFCC;
+$chapter-name-color:  #CC0000;
+$drop-down-background: #F1EFE7;
+$footer-link-color: #C2AF9A;
+$drop-cap-color: #990033; 
+*/
+$dark-back-color: #0b78d1;
+$title-color: #FFFFCC;
+$chapter-name-color:  #d1640b;
+$drop-down-background: #e6f1fa;
+$footer-link-color: #C2AF9A;
+$drop-cap-color: #990033; 
+
+
 *{
     box-sizing: border-box;
 }
@@ -8,9 +23,7 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-
 /* --- common --- */
-
 .clearfix:after {
     content: " ";
     visibility: hidden;
@@ -23,25 +36,12 @@ body {
     width: 48%;
 }
 
-.success {
-    color: green;
-}
-
-.danger {
-    color: red;
-}
-
-.btn {
-    text-decoration: none;
-    display: inline-block;
-}
-
 /* ---- header ---- */
 
 .main-header {
     border: none;
     margin: 0;
-    background: rgb(143, 116, 86);
+    background: $dark-back-color;
     width: 100%;
     padding: 0 13px;
     box-sizing: border-box;
@@ -88,7 +88,7 @@ body {
     .main-caption{
         font-size: 32px;
         font-weight: bold;
-        color: #FFC;
+        color: $title-color;
         padding: 5px 0 5px 0;
         font-family: Georgia, serif;
         font-variant: small-caps;
@@ -99,12 +99,7 @@ body {
     .second-caption {
         font-size: 18px;
         font-weight: bold;
-        color: #FFF;
-    }
-    .header-login{
-        color: #F1EFE7;
-        padding-top: 10px;
-        font-weight: bold;
+        color: white;
     }
 }
 
@@ -124,12 +119,12 @@ body {
 /*--- left menu --- */
 .side-menu {
     @media screen and (min-width: 1001px) {
-        background: rgb(241, 239, 231);
+        background: $drop-down-background;
         width: 190px;
         float: left;
     }
     @media screen and (max-width: 1000px) {
-        background: rgb(241, 239, 231);
+        background: $drop-down-background;
     }
     ul {
         list-style: none;
@@ -159,15 +154,15 @@ body {
             display: block;
             width: 100%;
             font-size: 16px;
-            color: #8F7456;
+            color: $dark-back-color;
             font-weight: bold;
             text-align: center;
             text-decoration: underline;
             padding: 5px 10px;
-            background-color:  #FFFFFF;
+            background-color:  white;
             box-sizing: border-box;
             &:hover {
-                color: rgb(204, 0, 0);
+                color: $chapter-name-color;
             }
         }
         .active a{
@@ -180,15 +175,15 @@ body {
         .book-item {
             a {
                 font-size: 16px;
-                color: #8F7456;
+                color: $dark-back-color;
                 margin-left: 4px;
                 text-decoration: none;
                 &:hover {
-                    color: rgb(204, 0, 0);
+                    color: $chapter-name-color;
                 }
             }
             &.active a{
-                color: rgb(204, 0, 0);
+                color: $chapter-name-color;
             }            
         }
     }
@@ -208,11 +203,11 @@ body {
             line-height: 40px;
             border: 1px solid #CAD0DB;
             border-bottom: 0;
-            color: #F1EFE7;
+            color: $drop-down-background;
             vertical-align: top;
             text-decoration: none;
-            background-color: #8F7456;
-            font-family: Arial,serif;
+            background-color: $dark-back-color;
+            font-family: Verdana, serif;
             font-size: 18px;
             font-weight: bold;
             padding: 0 25px;
@@ -243,10 +238,10 @@ body {
 }
 
 .main-content {
-    border: 2px solid rgb(241, 239, 231);
+    border: 2px solid $drop-down-background;
     width: 100%;
     a { 
-        color: #8F7456;
+        color: $dark-back-color;
         text-decoration: none;
     }
     .prev-chapter, .next-chapter {
@@ -260,13 +255,13 @@ body {
 
 %book-ends {
     text-align: center;
-    color: #8F7456;
+    color: $dark-back-color;
     padding: 8px;
 }
 
 .book-header { 
     @extend %book-ends;
-    border-bottom: 2px solid rgb(241, 239, 231);
+    border-bottom: 2px solid $drop-down-background;
     .vers-view-type {
         position: absolute;
         @media screen and (max-width: 600px) {
@@ -283,13 +278,13 @@ body {
         padding: 5px 0;
         font-weight: bold;
         font-size: large;
-        color: #CC0000;
+        color: $chapter-name-color;
     }
 }
 
 .book-footer {
     @extend %book-ends;
-    border-top: 2px solid rgb(241, 239, 231);
+    border-top: 2px solid $drop-down-background;
 }
 
 .act-chapter {
@@ -297,9 +292,9 @@ body {
     font-weight: bold;
     .chapter {
         display: inline-block;
-        color: #CC0000;
+        color: $chapter-name-color;
         font-size: large;
-        width: 130px;
+        min-width: 130px;
     }
 }
 
@@ -307,26 +302,26 @@ body {
     display: inline-block;
     font-size: medium;
     width: 80px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, serif;
 }
 
 .chapters {
     padding: 4px;
     font-weight: bold;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: small;
     a {
         &.active {
-            color: #CC0000;
+            color: $chapter-name-color;
         }
         &:hover {
-            color: #CC0000;
+            color: $chapter-name-color;
         }
     }
 }
 
 .verse {
-    padding: 8px;
+    padding: 1em;
     line-height: 150%;
     a {
         text-decoration: underline;
@@ -348,30 +343,30 @@ body {
 }
 
 .vers-searched {
-    background-color: #FFFFCC;
+    background-color: $title-color;
 }
 
 
 /* --- cutom colors --- */
 .firstverse {
-    color: #8F7456;
+    color: $dark-back-color;
 }
 
 .number {
     display: inline;
-    color: #CC0000;
+    color: $chapter-name-color;
     font-weight: bold;
-    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: small;
 }
 
 /* --- adv --- */
 .advert {
     width: 180px;
-    border: 2px solid rgb(241, 239, 231);
+    border: 2px solid $drop-down-background;
     text-align: center;
     display: inline-block;
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-family: Georgia, serif;
     font-size: 16px;
     vertical-align: top;
     margin-left: 15px;
@@ -386,17 +381,17 @@ body {
 }
 
 .advert-text {
-    font-family: Merriweather;
-    color: #8F7456;
+    font-family: Georgia, serif;
+    color: $dark-back-color;
 }
 
 
 .copyright{
     width: 100%;
     text-align: center;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 12px;
-    color: #C2AF9A;
+    color: $footer-link-color;
     font-weight: normal;
     padding: 25px 0;
 }
@@ -405,14 +400,14 @@ body {
 .report-problem {
     width: 100%;
     text-align: center;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     font-size: 12px;
-    color: #C2AF9A;
+    color: $footer-link-color;
     font-weight: normal;
     margin-top: -15px;
     padding-bottom: 25px;
     a {
-        color: #8F7456;
+        color: $dark-back-color;
     }
 }
 
@@ -432,7 +427,7 @@ body {
 // these are the styles added by me for content
 .verse > p:first-child:first-letter { 
     float: left; 
-    color: #903; 
+    color: $drop-cap-color;
     font-size: 50pt; 
     line-height: 40px; 
     padding-top: 4px; 
@@ -445,12 +440,19 @@ body {
   }
   
   .chapter-intro p {
-    padding-left: 4ch;
-    text-indent: -4ch;
+    padding-left: 2em;
+    text-indent: -1em;
+    padding-right: 1em;
   }
   
   
   .main {
     line-height: 150%;
     /*font-size: 14pt; */
+  }
+
+  div {
+    &.annotations, &.marginnotes, &.marginrefs {
+      padding: 1em;
+    }
   }
