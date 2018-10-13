@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<title>Douay Rheims {{ page.bookname }} {{ page.chapter }}</title>
-	<meta name=description content="Douay Rheims original true version">
+	<title>{{site.title}} {{ page.bookname }} {{ page.chapter }}</title>
+	<meta name=description content="{{site.description}}">
 	<meta name=keywords content="catholic, bible, douay, rheims, original, true, scriptures, old testament, new testament, vulgate">
 	<meta name=author content="God the Holy Spirit">
 	<meta name=copyright content="2018 David Porter">
@@ -16,7 +16,7 @@
 <body>
 <header class="main-header">
 	<div class="header-left">
-		<div class="main-caption"><a href=/>Douay Rheims Bible</a></div>
+		<div class="main-caption" title="{{site.description}}"><a href=/>{{site.title}}</a></div>
 		<div class="clearfix"> </div>
 	</div>
 	<div class="clearfix"> </div>
@@ -54,7 +54,7 @@
 		<a href=https://en.wikisource.org/wiki/Index:The_New_Testament_of_Iesvs_Christ_faithfvlly_translated_into_English,_ovt_of_the_authentical_Latin,_diligently_conferred_with_the_Greek,_%26_other_Editions_in_diuers_languages.pdf class=report-problem-action>View (and help out) on Wikisource</a>
 	</div>
 	<div class=report-problem>
-		<a href=mailto:davidporter65@outlook.com class=report-problem-action>Report a Problem</a>
+		<a href=mailto:{{site.email}} class=report-problem-action>Report a Problem</a>
 	</div>		
 	{% include photo-viewer.html %}
 </body>
