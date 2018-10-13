@@ -32,7 +32,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - new-testament/matthew/1/matthew1.html
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
