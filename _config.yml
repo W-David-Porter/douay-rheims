@@ -88,11 +88,11 @@ defaults:
     values:
       book: Genesis
       title: The Book of Genesis (in Hebrew Beresith)
-      tome: old-testament1 #this is used for images, because we have two OT tomes
+      tome: old-testament-1 #this is used for images, because we have two OT tomes
   - scope:
       path: old-testament/micah
     values:
       book: Micah
       title: The Prophecy of Micah
-      tome: old-testament2 #this is used for images, because we have two OT tomes
+      tome: old-testament-2 #this is used for images, because we have two OT tomes
 

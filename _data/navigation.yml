@@ -5,9 +5,9 @@ OT:
     Tome 1 Front: 
       path: tome-1-front
       chapters: [title]
-#    Genesis:
-#      path: genesis
-#      chapters: [1, 2, 3]
+    Genesis:
+      path: genesis
+      chapters: [1]
 #    Exodus:
 #      path: exodus
 #      chapters: [1, 2, 3]
