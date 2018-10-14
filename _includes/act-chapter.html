@@ -7,5 +7,5 @@
   {% assign testament = site.data.navigation[page.sidebar] %}
   {% assign book = testament.books[page.book] %}
   {% for chapter in book.chapters %}
-    <a href=/{{testament.path}}/{{book.path}}/{{chapter}}{% if chapter==page.chapter %} class=active{% endif %}>{{ chapter }}</a> {% endfor %}
+    <!--!{{chapter}}!{{page.chapter}}!--><a href=/{{testament.path}}/{{book.path}}/{{chapter}}{% if chapter==page.chapter %} class=active{% endif %}>{{ chapter }}</a> {% endfor %}
 </div>

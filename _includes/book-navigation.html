@@ -1,6 +1,6 @@
 <ul class="item-list collapsable-menu collapsed">
   {% assign testament = site.data.navigation[page.sidebar] %}
   {% for book in testament.books %}
-    <li class="book-item{% if book[0] == page.book %} active{% endif %}"><a href=/{{testament.path}}/{{book[1].path}}>{{ book[0] }}</a>
+    <li class="book-item{% if book[0] == page.book %} active{% endif %}"><a href=/{{testament.path}}/{{book[1].path}}/{{book[1].default-page}}>{{ book[0] }}</a>
   {% endfor %}
 </ul>

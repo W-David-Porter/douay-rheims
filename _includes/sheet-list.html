@@ -1,5 +1,5 @@
 <ul class="sheet-list collapsable-menu collapsed">
   {% for testament in site.data.navigation %}
-    <li class="sheet-caption span_1_2{% if testament[0] == page.sidebar %} active{% endif %}"><a href=/{{testament[1].path}}>{{testament[0]}}</a>
+    <li class="sheet-caption span_1_2{% if testament[0] == page.sidebar %} active{% endif %}"><a href=/{{testament[1].default-page}}>{{testament[0]}}</a>
   {% endfor %}
 </ul>
