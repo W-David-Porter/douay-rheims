@@ -1,6 +1,9 @@
 OT: 
   path: old-testament 
   books:
+    Tome 1 Front: 
+      path: tome-1-front
+      chapters: [title]
 #    Genesis:
 #      path: genesis
 #      chapters: [1, 2, 3]
