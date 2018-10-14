@@ -17,7 +17,7 @@ title: Douay Rheims Bible
 email: DavidPorter65@outlook.com
 description: Douay Rheims Catholic Bible original true version of 1633
 url: "https://douayrheims.neocities.org"
-image-path: /assets/images/ 
+image-path: assets/images 
 
 
 # Build settings
@@ -52,24 +52,41 @@ defaults:
   - scope:
       path: new-testament/front-matter
     values:
-      bookname: Front Matter
+      book: Front Matter
   - scope:
       path: new-testament/matthew
     values:
-      bookname: Matthew
-      longbookname: The Holy Ghospel of Jesus Christ According to Matthew
+      book: Matthew
+      title: The Holy Ghospel of Jesus Christ According to Matthew
   - scope:
       path: new-testament/mark
     values:
-      bookname: Mark
-      longbookname: The Holy Ghospel of Jesus Christ According to Mark
+      book: Mark
+      title: The Holy Ghospel of Jesus Christ According to Mark
   - scope:
       path: new-testament/luke
     values:
-      bookname: Luke
-      longbookname: The Holy Ghospel of Jesus Christ According to Luke
+      book: Luke
+      title: The Holy Ghospel of Jesus Christ According to Luke
   - scope:
       path: new-testament/john
     values:
-      bookname: John
-      longbookname: The Holy Ghospel of Jesus Christ According to John
+      book: John
+      title: The Holy Ghospel of Jesus Christ According to John
+  - scope:
+      path: old-testament
+    values:
+      sidebar: OT
+  - scope:
+      path: old-testament/genesis
+    values:
+      book: Genesis
+      title: The Book of Genesis (in Hebrew Beresith)
+      tome: old-testament1 #this is used for images, because we have two OT tomes
+  - scope:
+      path: old-testament/micah
+    values:
+      book: Micah
+      title: The Prophecy of Micah
+      tome: old-testament2 #this is used for images, because we have two OT tomes
+

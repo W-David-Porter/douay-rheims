@@ -1,14 +1,11 @@
 <div class="act-chapter">
     <div class="prev-chapter"><a href="{{ page.prev }}">&lt; prev</a></div>|
-    <div class="chapter">{{ page.chapter-heading }}</div>
+    <div class="chapter">{{ page.chapter-title }}</div>
     |<div class="next-chapter"><a href="{{ page.next }}">next &gt;</a></div>
 </div>
 <div class="chapters">
-    {% assign testament = site.data.navigation.testaments | where: "testament", page.sidebar | first %}
-    {% assign book = testament.books | where: "name", page.bookname | first %}
-    {% for chapter in book.chapters %}
-        {% assign lowerchapter = page.chapter | downcase %}
-        {% assign chapterasstring = chapter | append: "" %}
-        <a href={{book.path}}/{{chapter}}{% if chapterasstring==lowerchapter %} class=active{% endif %}>{{ chapter }}</a>
-    {% endfor %}
+  {% assign testament = site.data.navigation[page.sidebar] %}
+  {% assign book = testament.books[page.book] %}
+  {% for chapter in book.chapters %}
+    <a href=/{{testament.path}}/{{book.path}}/{{chapter}}{% if chapter==page.chapter %} class=active{% endif %}>{{ chapter }}</a> {% endfor %}
 </div>

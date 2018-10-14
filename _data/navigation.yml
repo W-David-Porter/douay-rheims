@@ -1,35 +1,33 @@
-testaments:
-  - testament: OT
-    url: /old-testament/genesis/1  
-    books:
-      - name: Genesis
-        path: /old-testament/genesis
-        index: 1
-        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
-      - name: Job
-        path: /old-testament/job
-        index: 1
-        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
-  - testament: NT
-    url: /new-testament/matthew/1
-    books:
-      - name: Front Matter
-        path: /new-testament/front-matter
-        index: title
-        chapters: [cover, title, approbation, preface, books, marks, summary]
-      - name: Matthew
-        path: /new-testament/matthew
-        index: 1
-        chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
-      - name: Mark
-        path: /new-testament/mark
-        index: 1
-        chapters: [cover, argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-      - name: Luke
-        path: /new-testament/luke
-        index: 1
-        chapters: [cover, argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
-      - name: John
-        path: /new-testament/john
-        index: 1
-        chapters: [cover, argument, 1]
+OT: 
+  path: old-testament 
+  books:
+#    Genesis:
+#      path: genesis
+#      chapters: [1, 2, 3]
+#    Exodus:
+#      path: exodus
+#      chapters: [1, 2, 3]
+#    Leviticus:
+#      path: leviticus
+#      chapters: [1, 2, 3]
+#    Job:
+#      path: job
+#      chapters: [1, 2, 3]
+NT:
+  path: new-testament
+  books:
+    Front Matter:
+      path: front-matter
+      chapters: [cover, title, approbation, preface, books, marks, summary]
+    Matthew:
+      path: matthew
+      chapters: [argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+    Mark:
+      path: mark
+      chapters: [cover, argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+    Luke:
+      path: luke
+      chapters: [cover, argument, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+    John:
+      path: john
+      chapters: [cover, argument, 1]

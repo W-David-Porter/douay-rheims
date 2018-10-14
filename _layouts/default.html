@@ -2,11 +2,11 @@
 <html>
 <head>
 	<meta charset=utf-8>
-	<title>{{site.title}} {{ page.bookname }} {{ page.chapter }}</title>
+	<meta name=viewport content="width=device-width, initial-scale=1.0">
+	<title>{{site.title}} {{ page.book }} {{ page.chapter }}</title>
 	<meta name=description content="{{site.description}}">
 	<meta name=keywords content="catholic, bible, douay, rheims, original, true, scriptures, old testament, new testament, vulgate">
-	<meta name=author content="God the Holy Spirit">
-	<meta name=copyright content="2018 David Porter">
+	<meta name=copyright content="Public Domain">
 	<meta name=robots content="index, follow">
 	<meta name=revisit-after content="1 week">
 	{% seo %}
@@ -25,7 +25,7 @@
 	<div class="side-menu">
 	<div class="dropdown-menu">
 		<a href="#" class="selected-sheet-caption dropdown" data-target="sheet-list">{{page.sidebar}}</a>
-		<a href="#" class="selected-book dropdown" data-target="item-list">{{page.bookname}}</a>
+		<a href="#" class="selected-book dropdown" data-target="item-list">{{page.book}}</a>
 	</div>
 	{% include sheet-list.html %}
 	{% include book-navigation.html %}
@@ -34,12 +34,10 @@
 		<div class="main-content">
 			<div class="book-header">
 				<div class="bible-name">The Holy Bible — Original Douay Rheims Translation</div>
-				<div class="book-name">{{ page.longbookname }}</div>
+				<div class="book-name">{{ page.title }}</div>
 				{% include act-chapter.html %}
 			</div>
-
-            {{ content }}
-
+      {{ content }}
 			<div class="book-footer">
 				{% include act-chapter.html %}
 			</div>
