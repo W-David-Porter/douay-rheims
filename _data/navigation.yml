@@ -4,7 +4,8 @@ OT:
   books:
     Tome 1 Front: 
       path: tome-1-front
-      chapters: [title]
+      default-page: title
+      chapters: [title, approbation]
     Genesis:
       path: genesis
       chapters: [1]
@@ -40,4 +41,4 @@ NT:
     John:
       path: john
       default-page: 1
-      chapters: [picture, argument, 1]
+      chapters: [picture, argument, 1, 2]
