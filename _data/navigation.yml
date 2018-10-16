@@ -5,7 +5,7 @@ OT:
     Tome 1 Front: 
       path: tome-1-front
       default-page: title
-      chapters: [title, approbation]
+      chapters: [title, approbation, summary]
     Genesis:
       path: genesis
       chapters: [1]
