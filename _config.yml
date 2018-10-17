@@ -81,7 +81,7 @@ defaults:
       path: old-testament/tome-1-front
     values:
       book: Tome 1 Front
-      title: THE HOLY BIBLE
+      title: Front Matter — Tome 1
       tome: old-testament-1 #this is used for images, because we have two OT tomes
   - scope:
       path: old-testament/genesis
