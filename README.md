@@ -1,7 +1,14 @@
-# douay-rheims
+# DOUAY RHEIMS
 
-Originals are on [https://en.wikisource.org/wiki/Index:The_New_Testament_of_Iesvs_Christ_faithfvlly_translated_into_English,_ovt_of_the_authentical_Latin,_diligently_conferred_with_the_Greek,_%26_other_Editions_in_diuers_languages.pdf](wikisource).
+ * ## New Testament is 1633 edition
+ * ## Old Testament is 1635 edition
 
-The site is being uploaded to [Douay Rheims on neocities.org](https://douayrheims.neocities.org)
+Originals are on [wikisource](https://en.wikisource.org/wiki/Index:The\_New\_Testament\_of\_Iesvs\_Christ\_faithfvlly\_translated\_into\_English,\_ovt\_of\_the\_authentical\_Latin,\_diligently\_conferred\_with\_the\_Greek,\_%26\_other\_Editions\_in\_diuers\_languages.pdf).
+
+Go to a wikisource page and transcribe it.
+
+Then get the page html and add it into this project.
+
+The generated site is being uploaded to [Douay Rheims on neocities.org](https://douayrheims.neocities.org)
 
 
