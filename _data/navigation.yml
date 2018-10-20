@@ -5,11 +5,11 @@ OT:
     Tome 1 Front: 
       path: tome-1-front
       default-page: title
-      chapters: [title, approbation, preface, bible, OT, moyses]
+      chapters: [title, approbation, preface, bible, OT, moyses, marks]
     Genesis:
       path: genesis
       default-page: 1
-      chapters: [1]
+      chapters: [argument, 1, 2]
 #    Exodus:
 #      path: exodus
 #      chapters: [1, 2, 3]

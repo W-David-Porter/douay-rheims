@@ -450,6 +450,7 @@ body {
     padding-left: 2em;
     text-indent: -1em;
     padding-right: 1em;
+    font-style: italic;
   }
   
   
@@ -462,4 +463,11 @@ body {
     &.annotations, &.marginnotes, &.marginrefs {
       padding: 1em;
     }
+  }
+
+  a.afn, a.annotation {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
   }
