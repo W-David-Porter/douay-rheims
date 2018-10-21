@@ -9,7 +9,7 @@ OT:
     Genesis:
       path: genesis
       default-page: 1
-      chapters: [argument, 1, 2]
+      chapters: [argument, 1, 2, 3]
 #    Exodus:
 #      path: exodus
 #      chapters: [1, 2, 3]
